@@ -1,0 +1,41 @@
+@import "src/styles/main";
+
+
+//.customLabel {
+//  margin: 0 10px;
+//}
+.customCheckbox {
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  & + label::before {
+    cursor: pointer;
+    content: '';
+    display: inline-block;
+    margin-top: px-to-rem(2px);
+    min-width: px-to-rem(22px);
+    min-height: px-to-rem(22px);
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E5E5E5;
+    border-radius: px-to-rem(4px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 10px;
+  }
+
+  &:checked + label::before {
+    border-color: $main-color;
+    background-color: $main-color;
+    background-image: url('../../../assets/px-confirm.svg');
+  }
+}

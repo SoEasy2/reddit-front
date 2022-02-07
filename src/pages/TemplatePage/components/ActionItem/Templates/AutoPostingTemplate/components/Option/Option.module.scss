@@ -1,0 +1,27 @@
+.button, .create{
+  background-color: #fff;
+  padding: 6px 12px;
+  text-align: left;
+  border:none;
+  border-top: 1px solid #EBEFF2;
+  outline: none;
+  color: #1C212D;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all.5s;
+  cursor: pointer;
+  &:hover{
+    background-color: #F5F6F8;
+  }
+}
+.create{
+  color:#FF4500;
+  font-size: 14px;
+  line-height: 21px;
+  transition: .5s;
+  &:hover{
+    color:#fff;
+    background-color: #FF4500;
+  }
+}

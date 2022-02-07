@@ -1,0 +1,23 @@
+@import "src/styles/main";
+
+.successStatusBlock {
+  width: px-to-rem(96px);
+}
+
+.failStatusBlock {
+  width: px-to-rem(91px);
+}
+
+.waitForWorkStatusBlock {
+  width: px-to-rem(100px);
+}
+
+
+.text {
+  display: inline-block;
+  font-size: px-to-rem(14px);
+  color: $text-third-color;
+  position: relative;
+  bottom: 5px;
+  margin-left: 15px;
+} 

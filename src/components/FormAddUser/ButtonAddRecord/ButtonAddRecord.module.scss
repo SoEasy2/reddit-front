@@ -1,0 +1,20 @@
+.button{
+  background-color: transparent;
+  border:none;
+  outline: none;
+  padding: 9px 7px;
+  cursor: pointer;
+  transition: all .5s;
+  margin-right: 19px;
+  border-radius: 4px;
+  &:hover{
+    background-color: #47C897;
+    .img{
+      fill:#fff;
+
+    }
+  }
+  .img{
+    fill:#47C897;
+  }
+}

@@ -1,0 +1,46 @@
+@import "src/styles/main";
+
+.filterListButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  border-radius: $small-button-border-radius;
+  background-color: $white-color;
+  width: px-to-rem(40px);
+  height: px-to-rem(40px);
+  transition: all .5s;
+  cursor: pointer;
+
+  .topLine, .middleLine, .bottomLine {
+    display: block;
+    height: px-to-rem(2px);
+    background: $breadcumbs-button-color;
+  }
+
+  .topLine  {
+    width: px-to-rem(20px);
+    position: relative;
+    top: px-to-rem(4px);
+  }
+
+  .middleLine {
+    width: px-to-rem(13px);
+  }
+
+  .bottomLine {
+    width: px-to-rem(4px);
+    position: relative;
+    bottom: px-to-rem(4px);
+  }
+
+
+  &:hover {
+    background-color: $breadcumbs-button-color;
+
+    .topLine, .middleLine, .bottomLine  {
+      background: $white-color;
+    }
+  }
+}

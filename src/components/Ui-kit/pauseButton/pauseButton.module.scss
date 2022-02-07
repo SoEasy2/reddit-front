@@ -1,0 +1,34 @@
+@import "src/styles/main";
+
+
+.pauseButton {
+  width: px-to-rem(40px);
+  height: px-to-rem(40px);
+  border-radius: $main-border-radius;
+  border:none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.circleInPauseButton {
+  border-radius: 100%;
+  width: px-to-rem(20px);
+  height: px-to-rem(20px);
+  transform: translate(50% ,50%);
+  fill: $breadcumbs-button-color; 
+}
+
+.isRowSelected  {
+
+  .circleInPauseButton {
+    fill:$main-color;
+  }
+
+  &.pauseButton:hover  {
+    background: $main-color;
+
+    .circleInPauseButton  {
+      fill: $white-color;
+    }
+  }
+}

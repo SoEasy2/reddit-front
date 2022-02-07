@@ -1,0 +1,31 @@
+@import "src/styles/main";
+
+.noEditingButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: $small-button-border-radius;
+  background-color: $white-color;
+  width: px-to-rem(32px);
+  height: px-to-rem(32px);
+
+  .firstDot, .secondDot, .thirdDot {
+    margin-right: px-to-rem(1px);
+    display: block;
+    width: px-to-rem(4px);
+    height: px-to-rem(4px);
+    background: $breadcumbs-button-color;
+    border-radius: $small-button-border-radius;
+  }
+
+
+  &:hover {
+    background-color: $breadcumbs-button-color;
+
+    .firstDot, .secondDot, .thirdDot  {
+      background: $white-color;
+    }
+  }
+}

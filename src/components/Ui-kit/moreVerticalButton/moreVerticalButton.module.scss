@@ -1,0 +1,42 @@
+@import "src/styles/main";
+
+.moreVerticalButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: $small-button-border-radius;
+  background-color: $white-color;
+  width: px-to-rem(40px);
+  height: px-to-rem(40px);
+  cursor: pointer;
+  transition: all .5s;
+
+  .topDot, .middleDot, .bottomDot {
+    display: block;
+    width: px-to-rem(4px);
+    height: px-to-rem(4px);
+    background: $breadcumbs-button-color;
+    border-radius: $small-button-border-radius;
+  }
+
+  .topDot {
+    position: relative;
+    top: px-to-rem(6px);
+  }
+
+  .bottomDot  {
+    position: relative;
+    bottom: px-to-rem(5px);
+  }
+
+
+  &:hover {
+    background-color: $breadcumbs-button-color;
+
+    .topDot, .middleDot, .bottomDot  {
+      background: $white-color;
+    }
+  }
+}

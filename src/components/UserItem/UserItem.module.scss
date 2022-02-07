@@ -1,0 +1,117 @@
+.wrapper{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+  .checkbox{
+    margin-bottom: 2px;
+    height: 24px;
+    width: 24px;
+  }
+  .workFlow{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    .element{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .smallFlow{
+    width: 6%;
+    display: flex;
+    padding-left: 20px;
+
+  }
+
+
+  .element{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    background-color: #fff;
+    padding: 18px 0;
+    word-break: break-all;
+    color:#1C212D;
+    position: relative;
+    .prompt{
+      top: 0;
+      z-index: 10;
+      left: -27px;
+    }
+    p{
+      color:#1c212d;
+    }
+    .date{
+      width: 45px;
+      height: 80px;
+    }
+  }
+  .img{
+    width: 20px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color:#1C212D;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 5px 6px;
+    border-radius: 4px;
+  }
+
+  .login{
+    width: 50%;
+  }
+  .password{
+    width: 20%;
+  }
+  .settings{
+    width: 30%;
+    position: relative;
+    .element{
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .buttonSettings{
+      border: none;
+      background-color: transparent;
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      padding: 8px 14px;
+      margin-right: 20px;
+      transform: rotate(90deg);
+      justify-content: space-between;
+      text-align: center;
+      flex-direction: column;
+      border-radius: 4px;
+    }
+    .settingsImg{
+      fill:#56657F;
+    }
+    .buttonSettingsActive{
+      background-color: #56657F;
+    }
+    .activeImg{
+      fill:#fff;
+    }
+  }
+  .inputChanged{
+    background-color: #F5F6F8;
+  }
+  .error{
+    border-color:red;
+  }
+}
+

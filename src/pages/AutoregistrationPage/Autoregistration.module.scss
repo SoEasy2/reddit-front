@@ -1,0 +1,123 @@
+@import "src/styles/main";
+.autoregistration{
+  display: flex;
+  .buttonsFilter{
+    display: flex;
+    margin-right: 24px;
+  }
+  .contents{
+    width: 100%;
+    background-color: $bg-color;
+  }
+  .filtersWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+  .playWrapper{
+    display: flex;
+    padding-left: 24px;
+    border-left:1px solid #DEE4E9;
+  }
+  .playButton{
+    background-color: #fff;
+    margin-right: 12px;
+  }
+  .inputSearch{
+    width: 69%;
+  }
+  .filterButton{
+    margin-left: 12px;
+  }
+  .viewRecord{
+    .headWrapper{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+    }
+    .status{
+      width: 17%;
+    }
+    .selectFlow{
+      padding-left: 10px;
+      width: 5%;
+    }
+    .loginFlow{
+      width: 22%;
+    }
+    .startDateFlow{
+      width: 16.2%;
+    }
+    .endDateFlow{
+      width: 17%;
+    }
+    .totalFlow{
+      width: 10%;
+    }
+    .actionFlow{
+
+    }
+  }
+}
+.text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1C212D;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+}
+
+.paginationContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.containerSelect{
+  display: flex;
+  position: relative;
+  p{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:#56657F;
+    margin-left: 100px;
+  }
+}
+.buttonArrow{
+  color:#56657F;
+  background: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 8px;
+}
+.left{
+  margin-right: 16px;
+}
+.right{
+  margin-left: 16px;
+}
+.buttonPagination{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color:#1C212D;
+  padding: 8px 13px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.activePage{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $button-color;
+  cursor: pointer;
+  border-radius: 4px;
+  color:#fff;
+}

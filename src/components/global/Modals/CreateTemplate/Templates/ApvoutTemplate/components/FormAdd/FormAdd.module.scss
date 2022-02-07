@@ -1,0 +1,37 @@
+.form{
+  background: #F5F6F8;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+  .input{
+    width: 75%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    padding: 6px 12px;
+    &:focus{
+      filter: drop-shadow(0px 6px 18px rgba(1, 74, 147, 0.14));
+    }
+  }
+  .action{
+
+  }
+  .confirmButton{
+
+  }
+  .checkBox{
+    width: 6%;
+  }
+  .url{
+    width: 20%;
+  }
+  .action{
+    width: 74%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}

@@ -1,0 +1,35 @@
+@import "src/styles/main";
+
+.playButton {
+  width: px-to-rem(40px);
+  height: px-to-rem(40px);
+  border-radius: $main-border-radius;
+  border:none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+
+.circleInPlayButton {
+  border-radius: 100%;
+  width: px-to-rem(20px);
+  height: px-to-rem(20px);
+  transform: translate(50% ,50%);
+  fill: $breadcumbs-button-color; 
+} 
+
+
+.isRowSelected  {
+
+  .circleInPlayButton {
+    fill:$main-turquoise-color;
+  }
+
+  &.playButton:hover  {
+    background: $main-turquoise-color;
+
+    .circleInPlayButton  {
+      fill: $white-color;
+    }
+  }
+}

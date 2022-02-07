@@ -1,0 +1,52 @@
+@import "src/styles/main";
+
+.alertComponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: px-to-rem(410px);
+  min-height: px-to-rem(40px);
+  border-radius: $main-border-radius;
+}
+
+.hiddenAlertComponent {
+  display: none;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: px-to-rem(38px);
+  height: px-to-rem(38px);
+}
+
+.text {
+  flex-basis: 328px;
+  text-align: center;
+  color: $white-color;
+  font-size: px-to-rem(14px);
+  padding-top: px-to-rem(12px);
+  padding-bottom: px-to-rem(12px);
+  line-height: 1.5;
+}
+
+.crossContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: px-to-rem(38px);
+  height: px-to-rem(38px);
+
+}
+
+.success  {
+  background-color: $main-turquoise-color;
+  box-shadow: 0px 6px 18px rgba(71, 200, 151, .36);
+}
+
+.error  {
+  background-color:  $main-color;
+  box-shadow: 0px 6px 18px rgba(255, 68, 68, .34);
+}

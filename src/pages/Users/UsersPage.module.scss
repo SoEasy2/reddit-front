@@ -1,0 +1,171 @@
+@import "src/styles/main";
+.users{
+  display: flex;
+}
+.contents{
+  width: 100%;
+  background-color: $bg-color;
+}
+.settings{
+  fill:#B7BFC5;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+}
+.filterWrapper{
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settingsBtn{
+  padding: 10px 17px;
+}
+
+.listUsers{
+  display: flex;
+  align-items: center;
+}
+.filterContainer{
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.filterBtn{
+  padding: 13px 10px;
+}
+.container{
+  padding-right: 9px;
+  background-color: #EEEFF0;
+  border-radius: 4px 4px 0px 0px;
+}
+.search{
+  width: 63vw;
+}
+.viewUsers{
+  margin-top: 20px;
+  width:98%;
+  height: 74vh;
+}
+
+.viewWrapper{
+  background-color: #EEEFF0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top:0;
+
+
+
+}
+.element{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  width: 100%;
+
+  padding: 18px 0;
+  word-break: break-all;
+
+}
+
+.checkbox{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.itemWrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .workFlow{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+
+  }
+  .smallFlow{
+    width: 6%;
+    display: flex;
+    padding-left: 20px;
+  }
+}
+
+
+.pagination{
+  display: flex;
+  align-items: center;
+}
+
+.paginationContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+.containerSelect{
+  display: flex;
+  position: relative;
+  p{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:#56657F;
+    margin-left: 100px;
+  }
+}
+.buttonArrow{
+  color:#56657F;
+  background: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 8px;
+}
+.left{
+  margin-right: 16px;
+}
+.right{
+  margin-left: 16px;
+}
+.buttonPagination{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color:#1C212D;
+  padding: 8px 13px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.activePage{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $button-color;
+  cursor: pointer;
+  border-radius: 4px;
+  color:#fff;
+}
+.alert{
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+}
+.prompt{
+  position: absolute;
+  bottom:20px;
+  right:40px;
+}

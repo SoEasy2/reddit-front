@@ -1,0 +1,38 @@
+.item{
+  background-color: #fff;
+  padding: 16px;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .checkBox{
+    width: 3.6%;
+  }
+  .name{
+    width: 27.3%;
+  }
+  .type{
+    width: 30.1%;
+  }
+  .action{
+    width: 39%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .actionModal{
+    top: 43px;
+    right: -9px;
+  }
+  .actionButton{
+    margin-right: 10px;
+  }
+  .text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color:#1C212D;
+  }
+}

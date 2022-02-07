@@ -1,0 +1,21 @@
+@import "src/styles/main";
+
+.textInput {
+  font-family: 'Poppins', sans-serif;
+  border-radius: $main-border-radius;
+  color: $black-font-color;
+  background-color: $gray-color;
+  font-weight: 400;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  padding: px-to-rem(12px);
+  display: flex;
+  border: 0;
+  outline: none;
+
+
+  &::placeholder {
+    color: $text-secondary-color;
+    font-size: px-to-rem(14px);
+  }
+}

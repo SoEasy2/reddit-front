@@ -1,0 +1,85 @@
+
+.wrapper{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F0F0F0;
+  .checkbox{
+    margin-bottom: 2px;
+    height: 24px;
+    width: 24px;
+  }
+  .workFlow{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    .element{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .smallFlow{
+    width: 6%;
+    display: flex;
+    padding-left: 20px;
+
+  }
+
+
+  .element{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    background-color: #fff;
+    padding: 18px 0;
+    align-items: center;
+    word-break: break-all;
+    color:#1C212D;
+    position: relative;
+    .prompt{
+      top: 0;
+      z-index: 10;
+      left: -27px;
+    }
+    p{
+      color:#1c212d;
+    }
+
+  }
+  .img{
+    width: 20px;
+    height: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color:#1C212D;
+    outline: none;
+    background-color: #f5f6f8;
+    border-radius: 4px;
+    border:1px solid transparent;
+    padding: 6px 0px 6px 6px;
+  }
+  .error{
+    border-color:red;
+  }
+  .login{
+    width: 80%;
+  }
+  .password{
+    width: 75%;
+  }
+  .action{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+

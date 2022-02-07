@@ -1,0 +1,29 @@
+@import "src/styles/main";
+
+.customButton {
+  border: none;
+  border-radius: $small-button-border-radius;
+  background-color: $white-color;
+  width: px-to-rem(36px);
+  height: px-to-rem(36px);
+  cursor: pointer;
+  transition: all .5s;
+  &:hover {
+    background-color: $gray-color;
+  }
+}
+
+.firstSpan, .secondSpan {
+  display: block;
+  height: px-to-rem(2px);
+  background: $modal-closing-button;
+  width: px-to-rem(18px);
+}
+
+.firstSpan  {
+  transform: rotate(45deg) translate(18px, 6px) ;
+}
+
+.secondSpan {
+  transform: rotate(-45deg) translate(-4px, 16px);
+}

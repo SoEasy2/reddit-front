@@ -1,0 +1,39 @@
+.wrapper{
+  display: flex;
+  width: 100%;
+  padding: 12px 0px 12px 10px;
+  border-bottom: 1px solid #F0F0F0;
+  align-items: center;
+  .select{
+    width: 4.1%;
+  }
+  .status{
+    width: 12.1%;
+  }
+  .login{
+    width: 16.1%;
+  }
+  .template{
+    width: 20.1%;
+  }
+  .startDate{
+    width: 13.1%;
+  }
+  .endDate{
+    width: 13.1%;
+  }
+  .action{
+    width: 22.1%;
+    display: flex;
+    justify-content: flex-end;
+    .actionModal{
+      margin-right: 32px;
+    }
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

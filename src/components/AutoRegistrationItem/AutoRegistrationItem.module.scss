@@ -1,0 +1,69 @@
+@import "src/styles/main";
+.wrapper{
+  display: flex;
+  width: 100%;
+  padding: 12px 0px 12px 10px;
+  border-bottom: 1px solid #F0F0F0;
+  align-items: center;
+  .status{
+    width: 17.1%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .promptText{
+      left:165px;
+      top:-0px;
+    }
+  }
+  .text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1C212D;
+  }
+  .selectFlow{
+    width: 5%;
+  }
+  .loginFlow{
+    width: 22.1%;
+  }
+  .startDateFlow{
+    width: 16.3%;
+  }
+  .endDateFlow{
+    width: 17.1%;
+  }
+  .totalFlow{
+    width: 7%;
+  }
+  .actionFlow{
+      display: flex;
+    justify-content: flex-end;
+    width: 13%;
+    padding-right: 37px;
+    position: relative;
+    .actionModal{
+      top: 44px;
+      right: 18px;
+    }
+  }
+  .buttonStatus{
+    width: 100%;
+  }
+  .actionModalActive{
+    background-color: $breadcumbs-button-color;
+    svg {
+      fill:#fff;
+    }
+  }
+  .prompt{
+    fill: #56657F;
+    transition: all .5s;
+    cursor: pointer;
+    margin-left: 14px;
+    &:hover{
+      fill:#1C212D;
+    }
+  }
+}

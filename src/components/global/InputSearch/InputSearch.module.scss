@@ -1,0 +1,23 @@
+.wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  border-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 12px 12px 40px;
+  color:#8C97A1;
+}
+.img{
+  position: absolute;
+  z-index: 10;
+  top: 16px;
+  left: 14px;
+}

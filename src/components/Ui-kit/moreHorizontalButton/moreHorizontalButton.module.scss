@@ -1,0 +1,23 @@
+@import "src/styles/main";
+
+.moreHorizontalButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: $small-button-border-radius;
+  background-color: $white-color;
+  width: px-to-rem(32px);
+  height: px-to-rem(32px);
+  cursor: pointer;
+  transition: all .5s;
+
+  &:hover {
+    background-color: $breadcumbs-button-color;
+
+    .moreHorizontalDots {
+      fill: $white-color;
+    }
+  }
+}
+

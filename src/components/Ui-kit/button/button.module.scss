@@ -1,0 +1,51 @@
+@import "src/styles/main";
+
+.customButton {
+  border-radius: $main-border-radius;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: px-to-rem(120px);
+  min-height: px-to-rem(16px);
+  font-size: px-to-rem(14px);
+  padding-bottom: px-to-rem(12px);
+  padding-top: px-to-rem(12px);
+  display: block;
+  cursor: pointer;
+}
+
+.redTheme {
+  background: $main-color;
+  color: $white-color;
+
+  &:hover{
+    background: $button-hover-color;
+  }
+}
+.whiteTheme {
+  background: $gray-color;
+  color:  $main-color;
+  &:hover {
+    background: $button-hover-color;
+    color: $white-color;
+  }
+}
+.blueTheme  {
+  background: $main-blue-color;
+  color: $white-color;
+}
+
+.create, .update {
+  background: $main-turquoise-color;
+  color: $white-color;
+}
+
+.delete {
+  background: $main-color;
+  color: $white-color;
+}
+
+.cancel {
+  background: $white-color;
+  color: $text-secondary-color;
+}

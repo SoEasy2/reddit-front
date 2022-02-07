@@ -1,0 +1,47 @@
+@import "src/styles/main";
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: px-to-rem(118px);
+  min-height: px-to-rem(20px);
+  padding-top: px-to-rem(5px);
+  padding-bottom: px-to-rem(5px);
+  border-radius: $main-border-radius;
+  border: 1px solid;
+  font-size: px-to-rem(13px);
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.working  {
+  border-color: $main-turquoise-color;
+  background: $status-component-working-background;
+  color: $main-turquoise-color;
+}
+
+.notWorking {
+  border-color: $text-secondary-color;
+  background: $status-component-not-working-background;
+  color: $text-secondary-color;
+}
+
+.waiting  {
+  border-color: $status-component-waiting-border;
+  background: $status-component-waiting-background;
+  color: $status-component-waiting-border;
+}
+
+.error  {
+  border-color: $status-component-error-border;
+  background: $status-component-error-background;
+  color: $main-color;
+}
+
+.ended  {
+  border-color: $status-component-ended-border;
+  background: $status-component-ended-background;
+  color: $status-component-ended-border;
+}
