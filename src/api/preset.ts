@@ -34,6 +34,7 @@ export const getKarmaById = async (id: number) => {
 };
 export const getLikeById = async (id: number) => {
   const response = await $api.get(`PresetSetting/getByIdLike?id=${id}`);
+  console.log(response.data);
   return response.data;
 };
 export const getPostingById = async (id: number) => {

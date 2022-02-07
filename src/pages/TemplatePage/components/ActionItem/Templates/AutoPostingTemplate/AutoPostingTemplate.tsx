@@ -83,8 +83,10 @@ const AutoPostingTemplate: React.FC<IProps> = ({ action, setAction }) => {
     });
   };
   function convertH2M(timeInHour: string) {
-    const timeParts = timeInHour.split(":");
-    return Number(timeParts[0]) * 60 + Number(timeParts[1]);
+    if (timeInHour !== "") {
+      const timeParts = timeInHour.split(":");
+      return Number(timeParts[0]) * 60 + Number(timeParts[1]);
+    }
   }
   const handleSavePost = () => {
     setSave(true);
@@ -92,14 +94,8 @@ const AutoPostingTemplate: React.FC<IProps> = ({ action, setAction }) => {
   };
   const handleActionPost = async (event: any) => {
     const time = getTimeFromMins(posts.interval);
-    console.log(time);
     if (event.target.name === "create") {
       if (isSave) {
-        console.log({
-          ...posts,
-          interval: time,
-          id: action ? action.id : undefined,
-        });
         await updatePresetPosting({
           ...posts,
           interval: time,
@@ -147,7 +143,10 @@ const AutoPostingTemplate: React.FC<IProps> = ({ action, setAction }) => {
       +event.target.value >= 0 &&
       +event.target.value < 150
     ) {
-      setPosts({ ...posts, interval: `${event.target.value}` });
+      setPosts({
+        ...posts,
+        interval: `${getTimeFromMins(event.target.value)}`,
+      });
     } else {
       setPosts({ ...posts, interval: `10` });
     }

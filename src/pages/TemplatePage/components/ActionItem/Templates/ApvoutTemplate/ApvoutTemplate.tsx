@@ -56,8 +56,10 @@ const ApvoutTemplate: React.FC<IProps> = ({ action, setAction }) => {
     });
   };
   function convertH2M(timeInHour: string) {
-    const timeParts = timeInHour.split(":");
-    return Number(timeParts[0]) * 60 + Number(timeParts[1]);
+    if (timeInHour !== "") {
+      const timeParts = timeInHour.split(":");
+      return Number(timeParts[0]) * 60 + Number(timeParts[1]);
+    }
   }
   const handleDelete = (data: string) => {
     setDeletePost(data);
@@ -109,9 +111,12 @@ const ApvoutTemplate: React.FC<IProps> = ({ action, setAction }) => {
       +event.target.value >= 0 &&
       +event.target.value < 150
     ) {
-      setPosts({ ...posts, interval: `${event.target.value}` });
+      setPosts({
+        ...posts,
+        interval: `${getTimeFromMins(event.target.value)}`,
+      });
     } else {
-      setPosts({ ...posts, interval: `10` });
+      setPosts({ ...posts, interval: `${getTimeFromMins(10)}` });
     }
   };
 
